@@ -1,0 +1,23 @@
+Host itf-kure
+Hostname itf-kure.ddo.jp
+
+Host nec nec.home
+Hostname 192.168.0.4
+
+Host cs cs.home
+HOstname 192.168.0.6
+
+Host db01 db01.home
+Hostname 192.168.0.30
+
+Host db02 db02.home
+Hostname 192.168.0.31
+
+Host web01 web01.home
+Hostname 192.168.0.40
+
+Host *.home
+ProxyCommand ssh itf-kure nc %h %p
+
+Host *
+User taiti
