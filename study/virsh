@@ -1,0 +1,19 @@
+#KVMの仮想ネットワークの一覧を表示
+virsh net-list
+
+#仮想ネットワークを自動で起動するようにする		
+virsh net-autostart default 
+
+#仮想ネットワークを起動する
+virsh net-start default 
+
+#仮想ネットワークを追加する
+ xml形式で設定ファイルを作成する
+　internal.xml
+   <network>
+     <name>internal</name>
+     <bridge name='virbr1' />
+   </namework>
+
+
+
