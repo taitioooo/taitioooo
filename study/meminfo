@@ -1,0 +1,45 @@
+MemTotal:       11294688 kB  #
+MemFree:          189852 kB
+Buffers:          276676 kB
+Cached:          6561920 kB
+SwapCached:         5052 kB
+Active:          6688496 kB
+Inactive:        3815340 kB
+Active(anon):    2973712 kB  #anon = Anonymous memory, no data exist on pysical disk for Anonymous memory. it only exist on memory.
+                             #"Active" data was used recently. 
+Inactive(anon):   694320 kB  #anon = Anonymous memory, no data exist on pysical disk for Anonymous memory. it only exist on memory.
+                             #"Inactive" data was not used for along time.
+Active(file):    3714784 kB  #file = file-xxxxx. data relate file-xxxx exsit on pysical dsik. 
+                              
+Inactive(file):  3121020 kB
+Unevictable:          16 kB  #Unevictable mean " it can not clean from memory " 
+Mlocked:              16 kB
+SwapTotal:       4585468 kB
+SwapFree:        4505444 kB
+Dirty:                56 kB
+Writeback:             0 kB
+AnonPages:       3661336 kB
+Mapped:            58228 kB
+Shmem:              2792 kB
+Slab:             444532 kB
+SReclaimable:     415196 kB
+SUnreclaim:        29336 kB
+KernelStack:        2840 kB
+PageTables:        27852 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:    10232812 kB
+Committed_AS:    8319792 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:      109984 kB
+VmallocChunk:   34359609768 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:         0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+DirectMap4k:     2702976 kB
+DirectMap2M:     8822784 kB

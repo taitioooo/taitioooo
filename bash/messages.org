@@ -1,0 +1,134 @@
+May 13 07:57:36 nec rsyslogd: [origin software="rsyslogd" swVersion="5.8.10" x-pid="10506" x-info="http://www.rsyslog.com"] rsyslogd was HUPed
+May 13 23:30:03 nec kernel: [2596940.351220] br0: port 3(vnet1) entering forwarding state
+May 13 23:30:03 nec kernel: [2596940.356891] br0: port 3(vnet1) entering disabled state
+May 13 23:30:03 nec kernel: [2596940.357464] device vnet1 left promiscuous mode
+May 13 23:30:03 nec kernel: [2596940.357470] br0: port 3(vnet1) entering disabled state
+May 13 23:30:09 nec kernel: [2596946.829910] device vnet1 entered promiscuous mode
+May 13 23:30:09 nec kernel: [2596946.848329] br0: port 3(vnet1) entering forwarding state
+May 13 23:30:09 nec kernel: [2596946.848349] br0: port 3(vnet1) entering forwarding state
+May 13 23:30:24 nec kernel: [2596961.836033] br0: port 3(vnet1) entering forwarding state
+May 14 07:51:07 nec rsyslogd: [origin software="rsyslogd" swVersion="5.8.10" x-pid="10506" x-info="http://www.rsyslog.com"] rsyslogd was HUPed
+May 14 07:51:07 nec rsyslogd: [origin software="rsyslogd" swVersion="5.8.10" x-pid="10506" x-info="http://www.rsyslog.com"] rsyslogd was HUPed
+May 15 07:43:28 nec rsyslogd: [origin software="rsyslogd" swVersion="5.8.10" x-pid="10506" x-info="http://www.rsyslog.com"] rsyslogd was HUPed
+May 16 00:25:40 nec kernel: [2772728.610662] mdadm: sending ioctl 1261 to a partition!
+May 16 00:25:40 nec kernel: [2772728.610669] mdadm: sending ioctl 1261 to a partition!
+May 16 00:25:40 nec kernel: [2772728.626160] mdadm: sending ioctl 1261 to a partition!
+May 16 00:25:40 nec kernel: [2772728.626164] mdadm: sending ioctl 1261 to a partition!
+May 16 00:25:40 nec kernel: [2772728.653051] mdadm: sending ioctl 1261 to a partition!
+May 16 00:25:40 nec kernel: [2772728.653058] mdadm: sending ioctl 1261 to a partition!
+May 16 00:25:40 nec kernel: [2772728.653924] mdadm: sending ioctl 1261 to a partition!
+May 16 00:25:40 nec kernel: [2772728.653929] mdadm: sending ioctl 1261 to a partition!
+May 16 00:25:44 nec kernel: [2772733.092567] mdadm: sending ioctl 1261 to a partition!
+May 16 00:25:44 nec kernel: [2772733.092571] mdadm: sending ioctl 1261 to a partition!
+May 16 00:25:46 nec kernel: [2772735.198367] scsi_verify_blk_ioctl: 4 callbacks suppressed
+May 16 00:25:46 nec kernel: [2772735.198370] mdadm: sending ioctl 1261 to a partition!
+May 16 00:25:46 nec kernel: [2772735.198373] mdadm: sending ioctl 1261 to a partition!
+May 16 00:25:46 nec kernel: [2772735.284340] mdadm: sending ioctl 1261 to a partition!
+May 16 00:25:46 nec kernel: [2772735.284345] mdadm: sending ioctl 1261 to a partition!
+May 16 00:25:47 nec kernel: [2772735.531733] mdadm: sending ioctl 1261 to a partition!
+May 16 00:25:47 nec kernel: [2772735.531739] mdadm: sending ioctl 1261 to a partition!
+May 16 00:25:47 nec kernel: [2772735.614099] mdadm: sending ioctl 1261 to a partition!
+May 16 00:25:47 nec kernel: [2772735.614103] mdadm: sending ioctl 1261 to a partition!
+May 16 00:25:47 nec kernel: [2772735.692317] mdadm: sending ioctl 1261 to a partition!
+May 16 00:25:47 nec kernel: [2772735.692321] mdadm: sending ioctl 1261 to a partition!
+May 16 00:25:51 nec os-prober: debug: running /usr/lib/os-probes/50mounted-tests on /dev/sda1
+May 16 00:25:52 nec 50mounted-tests: debug: mounted using GRUB ext2 filesystem driver
+May 16 00:25:52 nec 50mounted-tests: debug: running subtest /usr/lib/os-probes/mounted/10freedos
+May 16 00:25:52 nec 10freedos: debug: /dev/sda1 is not a FAT partition: exiting
+May 16 00:25:52 nec 50mounted-tests: debug: running subtest /usr/lib/os-probes/mounted/10qnx
+May 16 00:25:52 nec 10qnx: debug: /dev/sda1 is not a QNX4 partition: exiting
+May 16 00:25:52 nec 50mounted-tests: debug: running subtest /usr/lib/os-probes/mounted/20macosx
+May 16 00:25:52 nec macosx-prober: debug: /dev/sda1 is not an HFS+ partition: exiting
+May 16 00:25:52 nec 50mounted-tests: debug: running subtest /usr/lib/os-probes/mounted/20microsoft
+May 16 00:25:52 nec 20microsoft: debug: /dev/sda1 is not a MS partition: exiting
+May 16 00:25:52 nec 50mounted-tests: debug: running subtest /usr/lib/os-probes/mounted/30utility
+May 16 00:25:52 nec 30utility: debug: /dev/sda1 is not a FAT partition: exiting
+May 16 00:25:52 nec 50mounted-tests: debug: running subtest /usr/lib/os-probes/mounted/40lsb
+May 16 00:25:52 nec 50mounted-tests: debug: running subtest /usr/lib/os-probes/mounted/70hurd
+May 16 00:25:52 nec 50mounted-tests: debug: running subtest /usr/lib/os-probes/mounted/80minix
+May 16 00:25:52 nec 50mounted-tests: debug: running subtest /usr/lib/os-probes/mounted/83haiku
+May 16 00:25:52 nec 83haiku: debug: /dev/sda1 is not a BeFS partition: exiting
+May 16 00:25:52 nec 50mounted-tests: debug: running subtest /usr/lib/os-probes/mounted/90linux-distro
+May 16 00:25:52 nec 50mounted-tests: debug: running subtest /usr/lib/os-probes/mounted/90solaris
+May 16 00:25:52 nec os-prober: debug: running /usr/lib/os-probes/50mounted-tests on /dev/sda2
+May 16 00:25:52 nec 50mounted-tests: debug: /dev/sda2 type not recognised; skipping
+May 16 00:25:52 nec os-prober: debug: os detected by /usr/lib/os-probes/50mounted-tests
+May 16 00:25:52 nec os-prober: debug: running /usr/lib/os-probes/50mounted-tests on /dev/sda5
+May 16 00:25:52 nec kernel: [2772740.743934] scsi_verify_blk_ioctl: 56 callbacks suppressed
+May 16 00:25:52 nec kernel: [2772740.743938] blockdev: sending ioctl 125d to a partition!
+May 16 00:25:52 nec kernel: [2772740.743940] blockdev: sending ioctl 125d to a partition!
+May 16 00:25:52 nec kernel: [2772740.749011] blockdev: sending ioctl 125d to a partition!
+May 16 00:25:52 nec kernel: [2772740.749015] blockdev: sending ioctl 125d to a partition!
+May 16 00:25:52 nec os-prober: debug: running /usr/lib/os-probes/50mounted-tests on /dev/sdb1
+May 16 00:25:52 nec 50mounted-tests: debug: mounted using GRUB ext2 filesystem driver
+May 16 00:25:52 nec 50mounted-tests: debug: running subtest /usr/lib/os-probes/mounted/10freedos
+May 16 00:25:52 nec 10freedos: debug: /dev/sdb1 is not a FAT partition: exiting
+May 16 00:25:52 nec 50mounted-tests: debug: running subtest /usr/lib/os-probes/mounted/10qnx
+May 16 00:25:52 nec 10qnx: debug: /dev/sdb1 is not a QNX4 partition: exiting
+May 16 00:25:52 nec 50mounted-tests: debug: running subtest /usr/lib/os-probes/mounted/20macosx
+May 16 00:25:52 nec macosx-prober: debug: /dev/sdb1 is not an HFS+ partition: exiting
+May 16 00:25:52 nec 50mounted-tests: debug: running subtest /usr/lib/os-probes/mounted/20microsoft
+May 16 00:25:52 nec 20microsoft: debug: /dev/sdb1 is not a MS partition: exiting
+May 16 00:25:52 nec 50mounted-tests: debug: running subtest /usr/lib/os-probes/mounted/30utility
+May 16 00:25:52 nec 30utility: debug: /dev/sdb1 is not a FAT partition: exiting
+May 16 00:25:52 nec 50mounted-tests: debug: running subtest /usr/lib/os-probes/mounted/40lsb
+May 16 00:25:52 nec 50mounted-tests: debug: running subtest /usr/lib/os-probes/mounted/70hurd
+May 16 00:25:52 nec 50mounted-tests: debug: running subtest /usr/lib/os-probes/mounted/80minix
+May 16 00:25:52 nec 50mounted-tests: debug: running subtest /usr/lib/os-probes/mounted/83haiku
+May 16 00:25:52 nec 83haiku: debug: /dev/sdb1 is not a BeFS partition: exiting
+May 16 00:25:52 nec 50mounted-tests: debug: running subtest /usr/lib/os-probes/mounted/90linux-distro
+May 16 00:25:52 nec 50mounted-tests: debug: running subtest /usr/lib/os-probes/mounted/90solaris
+May 16 00:25:52 nec os-prober: debug: running /usr/lib/os-probes/50mounted-tests on /dev/sdb2
+May 16 00:25:52 nec 50mounted-tests: debug: /dev/sdb2 type not recognised; skipping
+May 16 00:25:52 nec os-prober: debug: os detected by /usr/lib/os-probes/50mounted-tests
+May 16 00:25:52 nec os-prober: debug: running /usr/lib/os-probes/50mounted-tests on /dev/sdb5
+May 16 00:25:52 nec kernel: [2772741.242049] blockdev: sending ioctl 125d to a partition!
+May 16 00:25:52 nec kernel: [2772741.242054] blockdev: sending ioctl 125d to a partition!
+May 16 00:25:52 nec kernel: [2772741.248826] blockdev: sending ioctl 125d to a partition!
+May 16 00:25:52 nec kernel: [2772741.248833] blockdev: sending ioctl 125d to a partition!
+May 16 00:25:52 nec os-prober: debug: running /usr/lib/os-probes/50mounted-tests on /dev/sdc1
+May 16 00:25:53 nec 50mounted-tests: debug: mounted using GRUB ext2 filesystem driver
+May 16 00:25:53 nec 50mounted-tests: debug: running subtest /usr/lib/os-probes/mounted/10freedos
+May 16 00:25:53 nec 10freedos: debug: /dev/sdc1 is not a FAT partition: exiting
+May 16 00:25:53 nec 50mounted-tests: debug: running subtest /usr/lib/os-probes/mounted/10qnx
+May 16 00:25:53 nec 10qnx: debug: /dev/sdc1 is not a QNX4 partition: exiting
+May 16 00:25:53 nec 50mounted-tests: debug: running subtest /usr/lib/os-probes/mounted/20macosx
+May 16 00:25:53 nec macosx-prober: debug: /dev/sdc1 is not an HFS+ partition: exiting
+May 16 00:25:53 nec 50mounted-tests: debug: running subtest /usr/lib/os-probes/mounted/20microsoft
+May 16 00:25:53 nec 20microsoft: debug: /dev/sdc1 is not a MS partition: exiting
+May 16 00:25:53 nec 50mounted-tests: debug: running subtest /usr/lib/os-probes/mounted/30utility
+May 16 00:25:53 nec 30utility: debug: /dev/sdc1 is not a FAT partition: exiting
+May 16 00:25:53 nec 50mounted-tests: debug: running subtest /usr/lib/os-probes/mounted/40lsb
+May 16 00:25:53 nec 50mounted-tests: debug: running subtest /usr/lib/os-probes/mounted/70hurd
+May 16 00:25:53 nec 50mounted-tests: debug: running subtest /usr/lib/os-probes/mounted/80minix
+May 16 00:25:53 nec 50mounted-tests: debug: running subtest /usr/lib/os-probes/mounted/83haiku
+May 16 00:25:53 nec 83haiku: debug: /dev/sdc1 is not a BeFS partition: exiting
+May 16 00:25:53 nec 50mounted-tests: debug: running subtest /usr/lib/os-probes/mounted/90linux-distro
+May 16 00:25:53 nec 50mounted-tests: debug: running subtest /usr/lib/os-probes/mounted/90solaris
+May 16 00:25:53 nec os-prober: debug: running /usr/lib/os-probes/50mounted-tests on /dev/sdc2
+May 16 00:25:53 nec 50mounted-tests: debug: mounted using GRUB ext2 filesystem driver
+May 16 00:25:53 nec 50mounted-tests: debug: running subtest /usr/lib/os-probes/mounted/10freedos
+May 16 00:25:53 nec 10freedos: debug: /dev/sdc2 is not a FAT partition: exiting
+May 16 00:25:53 nec 50mounted-tests: debug: running subtest /usr/lib/os-probes/mounted/10qnx
+May 16 00:25:53 nec 10qnx: debug: /dev/sdc2 is not a QNX4 partition: exiting
+May 16 00:25:53 nec 50mounted-tests: debug: running subtest /usr/lib/os-probes/mounted/20macosx
+May 16 00:25:53 nec macosx-prober: debug: /dev/sdc2 is not an HFS+ partition: exiting
+May 16 00:25:53 nec 50mounted-tests: debug: running subtest /usr/lib/os-probes/mounted/20microsoft
+May 16 00:25:53 nec 20microsoft: debug: /dev/sdc2 is not a MS partition: exiting
+May 16 00:25:53 nec 50mounted-tests: debug: running subtest /usr/lib/os-probes/mounted/30utility
+May 16 00:25:53 nec 30utility: debug: /dev/sdc2 is not a FAT partition: exiting
+May 16 00:25:53 nec 50mounted-tests: debug: running subtest /usr/lib/os-probes/mounted/40lsb
+May 16 00:25:53 nec 50mounted-tests: debug: running subtest /usr/lib/os-probes/mounted/70hurd
+May 16 00:25:53 nec 50mounted-tests: debug: running subtest /usr/lib/os-probes/mounted/80minix
+May 16 00:25:53 nec 50mounted-tests: debug: running subtest /usr/lib/os-probes/mounted/83haiku
+May 16 00:25:53 nec 83haiku: debug: /dev/sdc2 is not a BeFS partition: exiting
+May 16 00:25:53 nec 50mounted-tests: debug: running subtest /usr/lib/os-probes/mounted/90linux-distro
+May 16 00:25:53 nec 50mounted-tests: debug: running subtest /usr/lib/os-probes/mounted/90solaris
+May 16 00:25:53 nec os-prober: debug: /dev/sdc3: is active swap
+May 16 00:25:56 nec kernel: Kernel logging (proc) stopped.
+May 16 00:25:56 nec rsyslogd: [origin software="rsyslogd" swVersion="5.8.10" x-pid="10506" x-info="http://www.rsyslog.com"] exiting on signal 15.
+May 16 00:25:56 nec kernel: imklog 5.8.11, log source = /proc/kmsg started.
+May 16 00:25:56 nec rsyslogd: [origin software="rsyslogd" swVersion="5.8.11" x-pid="26266" x-info="http://www.rsyslog.com"] start
+May 16 00:27:10 nec rsyslogd: [origin software="rsyslogd" swVersion="5.8.11" x-pid="26266" x-info="http://www.rsyslog.com"] rsyslogd was HUPed
+May 16 00:52:51 nec rsyslogd: [origin software="rsyslogd" swVersion="5.8.11" x-pid="26266" x-info="http://www.rsyslog.com"] rsyslogd was HUPed
+May 16 00:52:51 nec rsyslogd: [origin software="rsyslogd" swVersion="5.8.11" x-pid="26266" x-info="http://www.rsyslog.com"] rsyslogd was HUPed
