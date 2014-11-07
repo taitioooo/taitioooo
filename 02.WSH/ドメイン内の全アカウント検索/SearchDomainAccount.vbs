@@ -32,15 +32,21 @@ objCommand.Properties("Sort On") = "Name"
 'SQLのWHERE句の条件には
 objCommand.CommandText = _ 
   "SELECT distinguishedName FROM 'LDAP://dc=kure,dc=local' WHERE sAMAccountName='" & SearchUser & "'"
+
 Set objRecordSet = objCommand.Execute
 
+objRecordSet.MoveFirst 
+Do Until objRecordSet.EOF 
+    Wscript.Echo objRecordSet.Fields("distinguishedName").Value 
+    objRecordSet.MoveNext 
+Loop
 
 ' 検索結果を表示
-If objRecordSet.EOF Then
-  strUserDN = "ログオンアカウント " & SearchUser & " は見つかりませんでした。"
-Else
-  strUserDN = objRecordSet.Fields("distinguishedName")
-End If
-WScript.Echo strUserDN
-objConnection.Close
-Set objCommand = Nothing
+'If objRecordSet.EOF Then
+'  strUserDN = "ログオンアカウント " & SearchUser & " は見つかりませんでした。"
+'Else
+'  strUserDN = objRecordSet.Fields("distinguishedName")
+'End If
+'WScript.Echo strUserDN
+'objConnection.Close
+'Set objCommand = Nothing
