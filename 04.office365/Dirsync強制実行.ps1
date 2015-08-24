@@ -1,0 +1,2 @@
+﻿Import-Module DirSync
+Start-OnlineCoexistenceSync
