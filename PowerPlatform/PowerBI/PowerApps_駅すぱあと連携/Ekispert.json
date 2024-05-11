@@ -1,0 +1,1230 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "Ekispart",
+    "description": "Ekispart"
+  },
+  "host": "api.ekispert.jp",
+  "basePath": "/",
+  "schemes": [
+    "https"
+  ],
+  "consumes": [],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/v1/json/search/course/extreme": {
+      "get": {
+        "summary": "RouteSearchAdvanced",
+        "description": "RouteSearchAdvanced",
+        "operationId": "RouteSearchAdvanced",
+        "parameters": [
+          {
+            "name": "viaList",
+            "default": "東京:大阪",
+            "in": "query",
+            "type": "string",
+            "required": true,
+            "x-ms-summary": "viaList"
+          },
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "default": " application/json",
+            "description": "Content-Type",
+            "x-ms-summary": "Content-Type"
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "ResultSet": {
+                  "type": "object",
+                  "properties": {
+                    "apiVersion": {
+                      "type": "string",
+                      "description": "apiVersion",
+                      "x-ms-summary": "apiVersion"
+                    },
+                    "engineVersion": {
+                      "type": "string",
+                      "description": "engineVersion",
+                      "x-ms-summary": "engineVersion"
+                    },
+                    "Course": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "searchType": {
+                            "type": "string",
+                            "description": "searchType",
+                            "x-ms-summary": "searchType"
+                          },
+                          "dataType": {
+                            "type": "string",
+                            "description": "dataType",
+                            "x-ms-summary": "dataType"
+                          },
+                          "SerializeData": {
+                            "type": "string",
+                            "description": "SerializeData",
+                            "x-ms-summary": "SerializeData"
+                          },
+                          "Price": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "kind": {
+                                  "type": "string",
+                                  "description": "kind",
+                                  "x-ms-summary": "kind"
+                                },
+                                "Oneway": {
+                                  "type": "string",
+                                  "description": "Oneway",
+                                  "x-ms-summary": "Oneway"
+                                },
+                                "Round": {
+                                  "type": "string",
+                                  "description": "Round",
+                                  "x-ms-summary": "Round"
+                                },
+                                "fareRevisionStatus": {
+                                  "type": "string",
+                                  "description": "fareRevisionStatus",
+                                  "x-ms-summary": "fareRevisionStatus"
+                                },
+                                "toLineIndex": {
+                                  "type": "string",
+                                  "description": "toLineIndex",
+                                  "x-ms-summary": "toLineIndex"
+                                },
+                                "fromLineIndex": {
+                                  "type": "string",
+                                  "description": "fromLineIndex",
+                                  "x-ms-summary": "fromLineIndex"
+                                },
+                                "index": {
+                                  "type": "string",
+                                  "description": "index",
+                                  "x-ms-summary": "index"
+                                },
+                                "selected": {
+                                  "type": "string",
+                                  "description": "selected",
+                                  "x-ms-summary": "selected"
+                                },
+                                "Type": {
+                                  "type": "string",
+                                  "description": "Type",
+                                  "x-ms-summary": "Type"
+                                },
+                                "RevisionStatus": {
+                                  "type": "string",
+                                  "description": "RevisionStatus",
+                                  "x-ms-summary": "RevisionStatus"
+                                }
+                              }
+                            },
+                            "description": "Price",
+                            "x-ms-summary": "Price"
+                          },
+                          "Route": {
+                            "type": "object",
+                            "properties": {
+                              "timeOther": {
+                                "type": "string",
+                                "description": "timeOther",
+                                "x-ms-summary": "timeOther"
+                              },
+                              "timeOnBoard": {
+                                "type": "string",
+                                "description": "timeOnBoard",
+                                "x-ms-summary": "timeOnBoard"
+                              },
+                              "exhaustCO2": {
+                                "type": "string",
+                                "description": "exhaustCO2",
+                                "x-ms-summary": "exhaustCO2"
+                              },
+                              "exhaustCO2atPassengerCar": {
+                                "type": "string",
+                                "description": "exhaustCO2atPassengerCar",
+                                "x-ms-summary": "exhaustCO2atPassengerCar"
+                              },
+                              "distance": {
+                                "type": "string",
+                                "description": "distance",
+                                "x-ms-summary": "distance"
+                              },
+                              "timeWalk": {
+                                "type": "string",
+                                "description": "timeWalk",
+                                "x-ms-summary": "timeWalk"
+                              },
+                              "transferCount": {
+                                "type": "string",
+                                "description": "transferCount",
+                                "x-ms-summary": "transferCount"
+                              },
+                              "Line": {
+                                "type": "array",
+                                "items": {
+                                  "type": "object",
+                                  "properties": {
+                                    "stopStationCount": {
+                                      "type": "string",
+                                      "description": "stopStationCount",
+                                      "x-ms-summary": "stopStationCount"
+                                    },
+                                    "timeOnBoard": {
+                                      "type": "string",
+                                      "description": "timeOnBoard",
+                                      "x-ms-summary": "timeOnBoard"
+                                    },
+                                    "exhaustCO2": {
+                                      "type": "string",
+                                      "description": "exhaustCO2",
+                                      "x-ms-summary": "exhaustCO2"
+                                    },
+                                    "exhaustCO2atPassengerCar": {
+                                      "type": "string",
+                                      "description": "exhaustCO2atPassengerCar",
+                                      "x-ms-summary": "exhaustCO2atPassengerCar"
+                                    },
+                                    "distance": {
+                                      "type": "string",
+                                      "description": "distance",
+                                      "x-ms-summary": "distance"
+                                    },
+                                    "Name": {
+                                      "type": "string",
+                                      "description": "Name",
+                                      "x-ms-summary": "Name"
+                                    },
+                                    "Type": {
+                                      "type": "string",
+                                      "description": "Type",
+                                      "x-ms-summary": "Type"
+                                    },
+                                    "ArrivalState": {
+                                      "type": "object",
+                                      "properties": {
+                                        "Type": {
+                                          "type": "string",
+                                          "description": "Type",
+                                          "x-ms-summary": "Type"
+                                        },
+                                        "Datetime": {
+                                          "type": "object",
+                                          "properties": {
+                                            "text": {
+                                              "type": "string",
+                                              "format": "date-time",
+                                              "description": "text",
+                                              "x-ms-summary": "text"
+                                            },
+                                            "operation": {
+                                              "type": "string",
+                                              "description": "operation",
+                                              "x-ms-summary": "operation"
+                                            }
+                                          },
+                                          "description": "Datetime",
+                                          "x-ms-summary": "Datetime"
+                                        },
+                                        "no": {
+                                          "type": "string",
+                                          "description": "no",
+                                          "x-ms-summary": "no"
+                                        }
+                                      },
+                                      "description": "ArrivalState",
+                                      "x-ms-summary": "ArrivalState"
+                                    },
+                                    "TypicalName": {
+                                      "type": "string",
+                                      "description": "TypicalName",
+                                      "x-ms-summary": "TypicalName"
+                                    },
+                                    "TimeReliability": {
+                                      "type": "string",
+                                      "description": "TimeReliability",
+                                      "x-ms-summary": "TimeReliability"
+                                    },
+                                    "DepartureState": {
+                                      "type": "object",
+                                      "properties": {
+                                        "Type": {
+                                          "type": "string",
+                                          "description": "Type",
+                                          "x-ms-summary": "Type"
+                                        },
+                                        "Datetime": {
+                                          "type": "object",
+                                          "properties": {
+                                            "text": {
+                                              "type": "string",
+                                              "format": "date-time",
+                                              "description": "text",
+                                              "x-ms-summary": "text"
+                                            },
+                                            "operation": {
+                                              "type": "string",
+                                              "description": "operation",
+                                              "x-ms-summary": "operation"
+                                            }
+                                          },
+                                          "description": "Datetime",
+                                          "x-ms-summary": "Datetime"
+                                        },
+                                        "no": {
+                                          "type": "string",
+                                          "description": "no",
+                                          "x-ms-summary": "no"
+                                        }
+                                      },
+                                      "description": "DepartureState",
+                                      "x-ms-summary": "DepartureState"
+                                    },
+                                    "Color": {
+                                      "type": "string",
+                                      "format": "date-time",
+                                      "description": "Color",
+                                      "x-ms-summary": "Color"
+                                    },
+                                    "fareIndex": {
+                                      "type": "string",
+                                      "description": "fareIndex",
+                                      "x-ms-summary": "fareIndex"
+                                    },
+                                    "Destination": {
+                                      "type": "string",
+                                      "description": "Destination",
+                                      "x-ms-summary": "Destination"
+                                    },
+                                    "teiki3Index": {
+                                      "type": "string",
+                                      "description": "teiki3Index",
+                                      "x-ms-summary": "teiki3Index"
+                                    },
+                                    "teiki6Index": {
+                                      "type": "string",
+                                      "description": "teiki6Index",
+                                      "x-ms-summary": "teiki6Index"
+                                    },
+                                    "track": {
+                                      "type": "string",
+                                      "description": "track",
+                                      "x-ms-summary": "track"
+                                    },
+                                    "teiki1Index": {
+                                      "type": "string",
+                                      "description": "teiki1Index",
+                                      "x-ms-summary": "teiki1Index"
+                                    }
+                                  }
+                                },
+                                "description": "Line",
+                                "x-ms-summary": "Line"
+                              },
+                              "Point": {
+                                "type": "array",
+                                "items": {
+                                  "type": "object",
+                                  "properties": {
+                                    "Station": {
+                                      "type": "object",
+                                      "properties": {
+                                        "code": {
+                                          "type": "string",
+                                          "description": "code",
+                                          "x-ms-summary": "code"
+                                        },
+                                        "Name": {
+                                          "type": "string",
+                                          "description": "Name",
+                                          "x-ms-summary": "Name"
+                                        },
+                                        "Type": {
+                                          "type": "string",
+                                          "description": "Type",
+                                          "x-ms-summary": "Type"
+                                        },
+                                        "Yomi": {
+                                          "type": "string",
+                                          "description": "Yomi",
+                                          "x-ms-summary": "Yomi"
+                                        }
+                                      },
+                                      "description": "Station",
+                                      "x-ms-summary": "Station"
+                                    },
+                                    "Prefecture": {
+                                      "type": "object",
+                                      "properties": {
+                                        "code": {
+                                          "type": "string",
+                                          "description": "code",
+                                          "x-ms-summary": "code"
+                                        },
+                                        "Name": {
+                                          "type": "string",
+                                          "description": "Name",
+                                          "x-ms-summary": "Name"
+                                        }
+                                      },
+                                      "description": "Prefecture",
+                                      "x-ms-summary": "Prefecture"
+                                    },
+                                    "GeoPoint": {
+                                      "type": "object",
+                                      "properties": {
+                                        "longi": {
+                                          "type": "string",
+                                          "description": "longi",
+                                          "x-ms-summary": "longi"
+                                        },
+                                        "lati": {
+                                          "type": "string",
+                                          "description": "lati",
+                                          "x-ms-summary": "lati"
+                                        },
+                                        "longi_d": {
+                                          "type": "string",
+                                          "description": "longi_d",
+                                          "x-ms-summary": "longi_d"
+                                        },
+                                        "gcs": {
+                                          "type": "string",
+                                          "description": "gcs",
+                                          "x-ms-summary": "gcs"
+                                        },
+                                        "lati_d": {
+                                          "type": "string",
+                                          "description": "lati_d",
+                                          "x-ms-summary": "lati_d"
+                                        }
+                                      },
+                                      "description": "GeoPoint",
+                                      "x-ms-summary": "GeoPoint"
+                                    }
+                                  }
+                                },
+                                "description": "Point",
+                                "x-ms-summary": "Point"
+                              }
+                            },
+                            "description": "Route",
+                            "x-ms-summary": "Route"
+                          }
+                        }
+                      },
+                      "description": "Course",
+                      "x-ms-summary": "Course"
+                    }
+                  },
+                  "description": "ResultSet",
+                  "x-ms-summary": "ResultSet"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/json/search/course": {
+      "get": {
+        "summary": "RouteSearch",
+        "description": "RouteSearch",
+        "operationId": "RouteSearch",
+        "parameters": [
+          {
+            "name": "from",
+            "default": "東京",
+            "in": "query",
+            "type": "string",
+            "required": true,
+            "x-ms-summary": "from"
+          },
+          {
+            "name": "to",
+            "default": "品川",
+            "in": "query",
+            "type": "string",
+            "required": true,
+            "x-ms-summary": "to"
+          },
+          {
+            "name": "date",
+            "default": "20180305",
+            "in": "query",
+            "type": "string",
+            "required": true,
+            "x-ms-summary": "date"
+          },
+          {
+            "name": "time",
+            "default": "1000",
+            "in": "query",
+            "type": "string",
+            "required": false,
+            "x-ms-summary": "time"
+          },
+          {
+            "name": "plane",
+            "default": "true",
+            "in": "query",
+            "type": "string",
+            "required": false,
+            "x-ms-summary": "plane"
+          },
+          {
+            "name": "shinkansen",
+            "default": "true",
+            "in": "query",
+            "type": "string",
+            "required": false,
+            "x-ms-summary": "shinkansen"
+          },
+          {
+            "name": "limitedExpress",
+            "default": "true",
+            "in": "query",
+            "type": "string",
+            "required": false,
+            "x-ms-summary": "limitedExpress"
+          },
+          {
+            "name": "bus",
+            "default": "true",
+            "in": "query",
+            "type": "string",
+            "required": false,
+            "x-ms-summary": "bus"
+          },
+          {
+            "name": "searchType",
+            "default": "departure",
+            "in": "query",
+            "type": "string",
+            "required": false,
+            "x-ms-summary": "searchType"
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "ResultSet": {
+                  "type": "object",
+                  "properties": {
+                    "apiVersion": {
+                      "type": "string",
+                      "description": "apiVersion",
+                      "x-ms-summary": "apiVersion"
+                    },
+                    "engineVersion": {
+                      "type": "string",
+                      "description": "engineVersion",
+                      "x-ms-summary": "engineVersion"
+                    },
+                    "Course": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "searchType": {
+                            "type": "string",
+                            "description": "searchType",
+                            "x-ms-summary": "searchType"
+                          },
+                          "dataType": {
+                            "type": "string",
+                            "description": "dataType",
+                            "x-ms-summary": "dataType"
+                          },
+                          "SerializeData": {
+                            "type": "string",
+                            "description": "SerializeData",
+                            "x-ms-summary": "SerializeData"
+                          },
+                          "Price": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "kind": {
+                                  "type": "string",
+                                  "description": "kind",
+                                  "x-ms-summary": "kind"
+                                },
+                                "Oneway": {
+                                  "type": "string",
+                                  "description": "Oneway",
+                                  "x-ms-summary": "Oneway"
+                                },
+                                "Round": {
+                                  "type": "string",
+                                  "description": "Round",
+                                  "x-ms-summary": "Round"
+                                },
+                                "fareRevisionStatus": {
+                                  "type": "string",
+                                  "description": "fareRevisionStatus",
+                                  "x-ms-summary": "fareRevisionStatus"
+                                },
+                                "toLineIndex": {
+                                  "type": "string",
+                                  "description": "toLineIndex",
+                                  "x-ms-summary": "toLineIndex"
+                                },
+                                "fromLineIndex": {
+                                  "type": "string",
+                                  "description": "fromLineIndex",
+                                  "x-ms-summary": "fromLineIndex"
+                                },
+                                "index": {
+                                  "type": "string",
+                                  "description": "index",
+                                  "x-ms-summary": "index"
+                                },
+                                "selected": {
+                                  "type": "string",
+                                  "description": "selected",
+                                  "x-ms-summary": "selected"
+                                },
+                                "Type": {
+                                  "type": "string",
+                                  "description": "Type",
+                                  "x-ms-summary": "Type"
+                                },
+                                "RevisionStatus": {
+                                  "type": "string",
+                                  "description": "RevisionStatus",
+                                  "x-ms-summary": "RevisionStatus"
+                                },
+                                "Name": {
+                                  "type": "string",
+                                  "description": "Name",
+                                  "x-ms-summary": "Name"
+                                },
+                                "vehicleIndex": {
+                                  "type": "string",
+                                  "description": "vehicleIndex",
+                                  "x-ms-summary": "vehicleIndex"
+                                }
+                              }
+                            },
+                            "description": "Price",
+                            "x-ms-summary": "Price"
+                          },
+                          "Route": {
+                            "type": "object",
+                            "properties": {
+                              "timeOther": {
+                                "type": "string",
+                                "description": "timeOther",
+                                "x-ms-summary": "timeOther"
+                              },
+                              "timeOnBoard": {
+                                "type": "string",
+                                "description": "timeOnBoard",
+                                "x-ms-summary": "timeOnBoard"
+                              },
+                              "exhaustCO2": {
+                                "type": "string",
+                                "description": "exhaustCO2",
+                                "x-ms-summary": "exhaustCO2"
+                              },
+                              "exhaustCO2atPassengerCar": {
+                                "type": "string",
+                                "description": "exhaustCO2atPassengerCar",
+                                "x-ms-summary": "exhaustCO2atPassengerCar"
+                              },
+                              "distance": {
+                                "type": "string",
+                                "description": "distance",
+                                "x-ms-summary": "distance"
+                              },
+                              "timeWalk": {
+                                "type": "string",
+                                "description": "timeWalk",
+                                "x-ms-summary": "timeWalk"
+                              },
+                              "transferCount": {
+                                "type": "string",
+                                "description": "transferCount",
+                                "x-ms-summary": "transferCount"
+                              },
+                              "Line": {
+                                "type": "object",
+                                "properties": {
+                                  "stopStationCount": {
+                                    "type": "string",
+                                    "description": "stopStationCount",
+                                    "x-ms-summary": "stopStationCount"
+                                  },
+                                  "teiki3Index": {
+                                    "type": "string",
+                                    "description": "teiki3Index",
+                                    "x-ms-summary": "teiki3Index"
+                                  },
+                                  "teiki6Index": {
+                                    "type": "string",
+                                    "description": "teiki6Index",
+                                    "x-ms-summary": "teiki6Index"
+                                  },
+                                  "timeOnBoard": {
+                                    "type": "string",
+                                    "description": "timeOnBoard",
+                                    "x-ms-summary": "timeOnBoard"
+                                  },
+                                  "track": {
+                                    "type": "string",
+                                    "description": "track",
+                                    "x-ms-summary": "track"
+                                  },
+                                  "exhaustCO2": {
+                                    "type": "string",
+                                    "description": "exhaustCO2",
+                                    "x-ms-summary": "exhaustCO2"
+                                  },
+                                  "fareIndex": {
+                                    "type": "string",
+                                    "description": "fareIndex",
+                                    "x-ms-summary": "fareIndex"
+                                  },
+                                  "exhaustCO2atPassengerCar": {
+                                    "type": "string",
+                                    "description": "exhaustCO2atPassengerCar",
+                                    "x-ms-summary": "exhaustCO2atPassengerCar"
+                                  },
+                                  "distance": {
+                                    "type": "string",
+                                    "description": "distance",
+                                    "x-ms-summary": "distance"
+                                  },
+                                  "teiki1Index": {
+                                    "type": "string",
+                                    "description": "teiki1Index",
+                                    "x-ms-summary": "teiki1Index"
+                                  },
+                                  "Name": {
+                                    "type": "string",
+                                    "description": "Name",
+                                    "x-ms-summary": "Name"
+                                  },
+                                  "Type": {
+                                    "type": "string",
+                                    "description": "Type",
+                                    "x-ms-summary": "Type"
+                                  },
+                                  "ArrivalState": {
+                                    "type": "object",
+                                    "properties": {
+                                      "no": {
+                                        "type": "string",
+                                        "description": "no",
+                                        "x-ms-summary": "no"
+                                      },
+                                      "Type": {
+                                        "type": "string",
+                                        "description": "Type",
+                                        "x-ms-summary": "Type"
+                                      },
+                                      "Datetime": {
+                                        "type": "object",
+                                        "properties": {
+                                          "text": {
+                                            "type": "string",
+                                            "format": "date-time",
+                                            "description": "text",
+                                            "x-ms-summary": "text"
+                                          },
+                                          "operation": {
+                                            "type": "string",
+                                            "description": "operation",
+                                            "x-ms-summary": "operation"
+                                          }
+                                        },
+                                        "description": "Datetime",
+                                        "x-ms-summary": "Datetime"
+                                      }
+                                    },
+                                    "description": "ArrivalState",
+                                    "x-ms-summary": "ArrivalState"
+                                  },
+                                  "Destination": {
+                                    "type": "string",
+                                    "description": "Destination",
+                                    "x-ms-summary": "Destination"
+                                  },
+                                  "TimeReliability": {
+                                    "type": "string",
+                                    "description": "TimeReliability",
+                                    "x-ms-summary": "TimeReliability"
+                                  },
+                                  "DepartureState": {
+                                    "type": "object",
+                                    "properties": {
+                                      "no": {
+                                        "type": "string",
+                                        "description": "no",
+                                        "x-ms-summary": "no"
+                                      },
+                                      "Type": {
+                                        "type": "string",
+                                        "description": "Type",
+                                        "x-ms-summary": "Type"
+                                      },
+                                      "Datetime": {
+                                        "type": "object",
+                                        "properties": {
+                                          "text": {
+                                            "type": "string",
+                                            "format": "date-time",
+                                            "description": "text",
+                                            "x-ms-summary": "text"
+                                          },
+                                          "operation": {
+                                            "type": "string",
+                                            "description": "operation",
+                                            "x-ms-summary": "operation"
+                                          }
+                                        },
+                                        "description": "Datetime",
+                                        "x-ms-summary": "Datetime"
+                                      }
+                                    },
+                                    "description": "DepartureState",
+                                    "x-ms-summary": "DepartureState"
+                                  },
+                                  "Color": {
+                                    "type": "string",
+                                    "description": "Color",
+                                    "x-ms-summary": "Color"
+                                  },
+                                  "chargeIndex": {
+                                    "type": "string",
+                                    "description": "chargeIndex",
+                                    "x-ms-summary": "chargeIndex"
+                                  }
+                                },
+                                "description": "Line",
+                                "x-ms-summary": "Line"
+                              },
+                              "Point": {
+                                "type": "array",
+                                "items": {
+                                  "type": "object",
+                                  "properties": {
+                                    "Station": {
+                                      "type": "object",
+                                      "properties": {
+                                        "code": {
+                                          "type": "string",
+                                          "description": "code",
+                                          "x-ms-summary": "code"
+                                        },
+                                        "Name": {
+                                          "type": "string",
+                                          "description": "Name",
+                                          "x-ms-summary": "Name"
+                                        },
+                                        "Type": {
+                                          "type": "string",
+                                          "description": "Type",
+                                          "x-ms-summary": "Type"
+                                        },
+                                        "Yomi": {
+                                          "type": "string",
+                                          "description": "Yomi",
+                                          "x-ms-summary": "Yomi"
+                                        }
+                                      },
+                                      "description": "Station",
+                                      "x-ms-summary": "Station"
+                                    },
+                                    "Prefecture": {
+                                      "type": "object",
+                                      "properties": {
+                                        "code": {
+                                          "type": "string",
+                                          "description": "code",
+                                          "x-ms-summary": "code"
+                                        },
+                                        "Name": {
+                                          "type": "string",
+                                          "description": "Name",
+                                          "x-ms-summary": "Name"
+                                        }
+                                      },
+                                      "description": "Prefecture",
+                                      "x-ms-summary": "Prefecture"
+                                    },
+                                    "GeoPoint": {
+                                      "type": "object",
+                                      "properties": {
+                                        "longi": {
+                                          "type": "string",
+                                          "description": "longi",
+                                          "x-ms-summary": "longi"
+                                        },
+                                        "lati": {
+                                          "type": "string",
+                                          "description": "lati",
+                                          "x-ms-summary": "lati"
+                                        },
+                                        "longi_d": {
+                                          "type": "string",
+                                          "description": "longi_d",
+                                          "x-ms-summary": "longi_d"
+                                        },
+                                        "gcs": {
+                                          "type": "string",
+                                          "description": "gcs",
+                                          "x-ms-summary": "gcs"
+                                        },
+                                        "lati_d": {
+                                          "type": "string",
+                                          "description": "lati_d",
+                                          "x-ms-summary": "lati_d"
+                                        }
+                                      },
+                                      "description": "GeoPoint",
+                                      "x-ms-summary": "GeoPoint"
+                                    }
+                                  }
+                                },
+                                "description": "Point",
+                                "x-ms-summary": "Point"
+                              }
+                            },
+                            "description": "Route",
+                            "x-ms-summary": "Route"
+                          },
+                          "PassStatus": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "teiki3Index": {
+                                  "type": "string",
+                                  "description": "teiki3Index",
+                                  "x-ms-summary": "teiki3Index"
+                                },
+                                "teiki6Index": {
+                                  "type": "string",
+                                  "description": "teiki6Index",
+                                  "x-ms-summary": "teiki6Index"
+                                },
+                                "kind": {
+                                  "type": "string",
+                                  "description": "kind",
+                                  "x-ms-summary": "kind"
+                                },
+                                "selected": {
+                                  "type": "string",
+                                  "description": "selected",
+                                  "x-ms-summary": "selected"
+                                },
+                                "teiki1Index": {
+                                  "type": "string",
+                                  "description": "teiki1Index",
+                                  "x-ms-summary": "teiki1Index"
+                                },
+                                "Name": {
+                                  "type": "string",
+                                  "description": "Name",
+                                  "x-ms-summary": "Name"
+                                },
+                                "Type": {
+                                  "type": "string",
+                                  "description": "Type",
+                                  "x-ms-summary": "Type"
+                                }
+                              }
+                            },
+                            "description": "PassStatus",
+                            "x-ms-summary": "PassStatus"
+                          }
+                        }
+                      },
+                      "description": "Course",
+                      "x-ms-summary": "Course"
+                    }
+                  },
+                  "description": "ResultSet",
+                  "x-ms-summary": "ResultSet"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/json/geo/station": {
+      "get": {
+        "summary": "NearByStation",
+        "description": "NearByStation",
+        "operationId": "NearByStation",
+        "parameters": [
+          {
+            "name": "geoPoint",
+            "default": "35.6783055555556,139.770441666667",
+            "in": "query",
+            "type": "string",
+            "required": true,
+            "x-ms-summary": "geoPoint"
+          },
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "default": " application/json",
+            "description": "Content-Type",
+            "x-ms-summary": "Content-Type"
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "ResultSet": {
+                  "type": "object",
+                  "properties": {
+                    "apiVersion": {
+                      "type": "string",
+                      "description": "apiVersion",
+                      "x-ms-summary": "apiVersion"
+                    },
+                    "engineVersion": {
+                      "type": "string",
+                      "description": "engineVersion",
+                      "x-ms-summary": "engineVersion"
+                    },
+                    "Point": {
+                      "type": "object",
+                      "properties": {
+                        "Station": {
+                          "type": "object",
+                          "properties": {
+                            "code": {
+                              "type": "string",
+                              "description": "code",
+                              "x-ms-summary": "code"
+                            },
+                            "Name": {
+                              "type": "string",
+                              "description": "Name",
+                              "x-ms-summary": "Name"
+                            },
+                            "Type": {
+                              "type": "string",
+                              "description": "Type",
+                              "x-ms-summary": "Type"
+                            },
+                            "Yomi": {
+                              "type": "string",
+                              "description": "Yomi",
+                              "x-ms-summary": "Yomi"
+                            }
+                          },
+                          "description": "Station",
+                          "x-ms-summary": "Station"
+                        },
+                        "Prefecture": {
+                          "type": "object",
+                          "properties": {
+                            "code": {
+                              "type": "string",
+                              "description": "code",
+                              "x-ms-summary": "code"
+                            },
+                            "Name": {
+                              "type": "string",
+                              "description": "Name",
+                              "x-ms-summary": "Name"
+                            }
+                          },
+                          "description": "Prefecture",
+                          "x-ms-summary": "Prefecture"
+                        },
+                        "GeoPoint": {
+                          "type": "object",
+                          "properties": {
+                            "longi": {
+                              "type": "string",
+                              "description": "longi",
+                              "x-ms-summary": "longi"
+                            },
+                            "lati": {
+                              "type": "string",
+                              "description": "lati",
+                              "x-ms-summary": "lati"
+                            },
+                            "longi_d": {
+                              "type": "string",
+                              "description": "longi_d",
+                              "x-ms-summary": "longi_d"
+                            },
+                            "gcs": {
+                              "type": "string",
+                              "description": "gcs",
+                              "x-ms-summary": "gcs"
+                            },
+                            "lati_d": {
+                              "type": "string",
+                              "description": "lati_d",
+                              "x-ms-summary": "lati_d"
+                            }
+                          },
+                          "description": "GeoPoint",
+                          "x-ms-summary": "GeoPoint"
+                        },
+                        "Distance": {
+                          "type": "string",
+                          "description": "Distance",
+                          "x-ms-summary": "Distance"
+                        }
+                      },
+                      "description": "Point",
+                      "x-ms-summary": "Point"
+                    }
+                  },
+                  "description": "ResultSet",
+                  "x-ms-summary": "ResultSet"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/json/station/light": {
+      "get": {
+        "summary": "StationSearch",
+        "description": "StationSearch",
+        "operationId": "StationSearch",
+        "parameters": [
+          {
+            "name": "name",
+            "default": "東京",
+            "in": "query",
+            "type": "string",
+            "required": true,
+            "x-ms-summary": "name"
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "ResultSet": {
+                  "type": "object",
+                  "properties": {
+                    "apiVersion": {
+                      "type": "string",
+                      "description": "apiVersion",
+                      "x-ms-summary": "apiVersion"
+                    },
+                    "engineVersion": {
+                      "type": "string",
+                      "description": "engineVersion",
+                      "x-ms-summary": "engineVersion"
+                    },
+                    "Point": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "Station": {
+                            "type": "object",
+                            "properties": {
+                              "code": {
+                                "type": "string",
+                                "description": "code",
+                                "x-ms-summary": "code"
+                              },
+                              "Name": {
+                                "type": "string",
+                                "description": "Name",
+                                "x-ms-summary": "Name"
+                              },
+                              "Type": {
+                                "type": "string",
+                                "description": "Type",
+                                "x-ms-summary": "Type"
+                              },
+                              "Yomi": {
+                                "type": "string",
+                                "description": "Yomi",
+                                "x-ms-summary": "Yomi"
+                              }
+                            },
+                            "description": "Station",
+                            "x-ms-summary": "Station"
+                          },
+                          "Prefecture": {
+                            "type": "object",
+                            "properties": {
+                              "code": {
+                                "type": "string",
+                                "description": "code",
+                                "x-ms-summary": "code"
+                              },
+                              "Name": {
+                                "type": "string",
+                                "description": "Name",
+                                "x-ms-summary": "Name"
+                              }
+                            },
+                            "description": "Prefecture",
+                            "x-ms-summary": "Prefecture"
+                          }
+                        }
+                      },
+                      "description": "Point",
+                      "x-ms-summary": "Point"
+                    }
+                  },
+                  "description": "ResultSet",
+                  "x-ms-summary": "ResultSet"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {},
+  "parameters": {},
+  "responses": {},
+  "securityDefinitions": {
+    "api_key": {
+      "type": "apiKey",
+      "in": "query",
+      "name": "key"
+    }
+  },
+  "security": [],
+  "tags": []
+}
